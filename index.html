@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Video educativi e di intrattenimento per bambini e contenuti per genitori.">
+    <meta name="keywords" content="video per bambini, educazione, canzoni per bambini, genitori, comportamenti bambini">
+    <meta name="author" content="Sonia">
     <title>I Bimbi Di Sonia</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Comic+Sans+MS&display=swap');
@@ -38,7 +41,7 @@
         }
         .container {
             padding: 20px;
-            background-color: rgba(255, 255, 255, 0.8); /* Background color with opacity */
+            background-color: rgba(255, 255, 255, 0.8);
         }
         .section {
             margin-bottom: 40px;
@@ -52,7 +55,6 @@
             padding-bottom: 28.125%;
             height: 0;
             overflow: hidden;
-            max-width: 50%;
             margin: 0 auto;
             background: #000;
         }
@@ -91,6 +93,8 @@
         }
         .cta-buttons p {
             font-size: 28px;
+            color: #F03D7D;
+            font-size: 36px;
         }
         .contact-info {
             display: flex;
@@ -107,6 +111,57 @@
         }
         .contact-info a:hover {
             text-decoration: underline;
+        }
+
+        /* Media Queries */
+        @media (min-width: 769px) {
+            .embed-container {
+                max-width: 50%; /* Riduce la larghezza dei video del 50% su desktop */
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                font-style: normal; /* Rimuove il corsivo */
+            }
+            nav {
+                flex-direction: column;
+            }
+            nav a {
+                margin: 10px 0;
+            }
+            .cta-buttons a {
+                padding: 10px 20px;
+                font-size: 18px;
+            }
+            .cta-buttons p {
+                font-size: 24px;
+            }
+            .section h2 {
+                font-size: 24px;
+            }
+            .contact-info p {
+                font-size: 18px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                font-style: normal; /* Rimuove il corsivo */
+            }
+            .cta-buttons a {
+                padding: 8px 16px;
+                font-size: 16px;
+            }
+            .cta-buttons p {
+                font-size: 20px;
+            }
+            .section h2 {
+                font-size: 20px;
+            }
+            .contact-info p {
+                font-size: 16px;
+            }
         }
     </style>
 </head>
@@ -125,7 +180,7 @@
     <div class="container">
         <div id="chi-sono" class="section">
             <h2>Chi Sono</h2>
-            <p>Benvenuti! Mi chiamo Sonia e sono un'educatrice di asilo nido con una passione per l'insegnamento e il divertimento per i piccolini. 
+            <p>Benvenuti! Mi chiamo Sonia e sono un'educatrice di asilo nido con una passione per l'insegnamento e il divertimento. 
 Su <a href="https://www.youtube.com/channel/UCLDmGQc5wHJdLHhBR0rfnPA?sub_confirmation=1" target="_blank">YouTube</a> troverete video per bambini: canteremo, balleremo ed impareremo numeri, lettere, animali, alimenti e tanto altro; mentre su <a href="https://www.instagram.com/ibimbidisonia" target="_blank">Instagram</a> e <a href="https://www.tiktok.com/@ibimbidisonia" target="_blank">TikTok</a> rispondo alle domande più frequenti dei genitori e discutiamo dei comportamenti dei vostri bambini. Seguitemi sui miei canali per rimanere aggiornati!</p>
             <div class="cta-buttons">
                 <p>A cosa sei interessato?</p>
@@ -134,7 +189,7 @@ Su <a href="https://www.youtube.com/channel/UCLDmGQc5wHJdLHhBR0rfnPA?sub_confirm
                 <a href="https://www.tiktok.com/@ibimbidisonia" target="_blank">Contenuti per Genitori su TikTok: Confrontiamoci insieme e condividiamo le nostre emozioni e perplessità.</a>
             </div>
         </div>
-        <div id="youtube" class="section">
+        <a href="https://www.youtube.com/channel/UCLDmGQc5wHJdLHhBR0rfnPA?sub_confirmation=1" target="_blank"><div id="youtube" class="section">
             <h2>YouTube</h2>
             <div class="embed-container">
                 <iframe src="https://www.youtube.com/embed/e0TfEu-aLoA?si=_ZzfuBirULSd0u8V" frameborder="0" allowfullscreen></iframe>
@@ -145,7 +200,7 @@ Su <a href="https://www.youtube.com/channel/UCLDmGQc5wHJdLHhBR0rfnPA?sub_confirm
             <div class="embed-container">
                 <iframe src="https://www.youtube.com/embed/bXjXOfGhS9U?si=BMsyT4uij6OQYv3u" frameborder="0" allowfullscreen></iframe>
             </div>
-            <p>Visita ed iscriviti al canale Youtube per tanti altri video e playlist: <a href="https://www.youtube.com/channel/UCLDmGQc5wHJdLHhBR0rfnPA?sub_confirmation=1" target="_blank">YouTube</a></p>
+            <p><a href="https://www.youtube.com/channel/UCLDmGQc5wHJdLHhBR0rfnPA?sub_confirmation=1" target="_blank">Visita ed iscriviti al canale Youtube per tanti altri video e playlist: YouTube</a></p>
         </div>
         <div id="contatti" class="section">
             <h2>Contatti</h2>
