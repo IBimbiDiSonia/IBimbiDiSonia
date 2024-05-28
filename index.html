@@ -9,6 +9,7 @@
     <title>I Bimbi Di Sonia</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Comic+Sans+MS&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
         body {
             font-family: 'Comic Sans MS', cursive, sans-serif;
@@ -55,6 +56,7 @@
             padding-bottom: 28.125%;
             height: 0;
             overflow: hidden;
+            max-width: 100%;
             margin: 0 auto;
             background: #000;
         }
@@ -114,14 +116,9 @@
         }
 
         /* Media Queries */
-        @media (min-width: 769px) {
-            .embed-container {
-                max-width: 50%; /* Riduce la larghezza dei video del 50% su desktop */
-            }
-        }
-
         @media (max-width: 768px) {
             body {
+                font-family: 'Roboto', sans-serif; /* Cambia il font sui dispositivi mobili */
                 font-style: normal; /* Rimuove il corsivo */
             }
             nav {
@@ -147,6 +144,7 @@
         
         @media (max-width: 480px) {
             body {
+                font-family: 'Roboto', sans-serif; /* Cambia il font sui dispositivi mobili */
                 font-style: normal; /* Rimuove il corsivo */
             }
             .cta-buttons a {
@@ -161,6 +159,12 @@
             }
             .contact-info p {
                 font-size: 16px;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .embed-container {
+                max-width: 50%; /* Riduce la larghezza dei video del 50% su desktop */
             }
         }
     </style>
@@ -189,7 +193,7 @@ Su <a href="https://www.youtube.com/channel/UCLDmGQc5wHJdLHhBR0rfnPA?sub_confirm
                 <a href="https://www.tiktok.com/@ibimbidisonia" target="_blank">Contenuti per Genitori su TikTok: Confrontiamoci insieme e condividiamo le nostre emozioni e perplessità.</a>
             </div>
         </div>
-        <a href="https://www.youtube.com/channel/UCLDmGQc5wHJdLHhBR0rfnPA?sub_confirmation=1" target="_blank"><div id="youtube" class="section">
+        <div id="youtube" class="section">
             <h2>YouTube</h2>
             <div class="embed-container">
                 <iframe src="https://www.youtube.com/embed/e0TfEu-aLoA?si=_ZzfuBirULSd0u8V" frameborder="0" allowfullscreen></iframe>
@@ -200,7 +204,7 @@ Su <a href="https://www.youtube.com/channel/UCLDmGQc5wHJdLHhBR0rfnPA?sub_confirm
             <div class="embed-container">
                 <iframe src="https://www.youtube.com/embed/bXjXOfGhS9U?si=BMsyT4uij6OQYv3u" frameborder="0" allowfullscreen></iframe>
             </div>
-            <p><a href="https://www.youtube.com/channel/UCLDmGQc5wHJdLHhBR0rfnPA?sub_confirmation=1" target="_blank">Visita ed iscriviti al canale Youtube per tanti altri video e playlist: YouTube</a></p>
+            <p>Visita ed iscriviti al canale Youtube per tanti altri video e playlist: <a href="https://www.youtube.com/channel/UCLDmGQc5wHJdLHhBR0rfnPA?sub_confirmation=1" target="_blank">YouTube</a></p>
         </div>
         <div id="contatti" class="section">
             <h2>Contatti</h2>
